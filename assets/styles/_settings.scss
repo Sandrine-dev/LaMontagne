@@ -1,0 +1,59 @@
+// FONTS
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+// VARIABLES
+$white : rgb(255, 254, 254);
+$black: rgb(18, 18, 18);
+$gray: rgb(232, 232, 232);
+
+// MIXINS
+
+@mixin title{
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@mixin text{
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
+@mixin flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+@mixin circleBtn{
+  border: 1px solid $black;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+@mixin squareBtn{
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
