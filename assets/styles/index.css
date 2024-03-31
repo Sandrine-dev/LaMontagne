@@ -63,6 +63,8 @@ header .circle_btn a {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   border-color: rgb(255, 254, 254);
   font-size: 1.3rem;
   width: 55px;
@@ -74,7 +76,8 @@ header .circle_btn a:hover {
 }
 
 nav {
-  background: rgb(232, 232, 232);
+  background: rgba(255, 255, 255, 0.27);
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,6 +92,64 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 65px;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 65px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  letter-spacing: 2px;
+}
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+}
+nav .nav_left {
+  font-size: 0.6rem;
+}
+nav .nav_left:hover li:not(:hover) {
+  background: none;
+  color: rgb(255, 254, 254);
+}
+nav .nav_left li {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+nav .nav_left li:first-child {
+  background: rgb(255, 254, 254);
+  color: rgb(18, 18, 18);
+}
+nav .nav_left li:hover {
+  background: rgb(255, 254, 254);
+  color: rgb(18, 18, 18);
+}
+nav .nav_right a {
+  color: rgb(255, 254, 254);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+nav .nav_right a:hover {
+  color: rgb(18, 18, 18);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 section {
