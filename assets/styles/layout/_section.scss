@@ -1,4 +1,50 @@
 section{
     background: $white;
     @include flexCenter;
+    .container {
+        margin: 40px auto;
+        h6{
+            font-family: "Merriweather", Arial, Helvetica, sans-serif;
+        }
+    }
+    .square_btn{
+        margin: 35px;
+        button{
+            @include squareBtn;
+            &:hover{
+                background: $black;
+                color: $white;
+            }
+        }
+    }
+}
+
+.first_section{
+    h6{
+        font-size: 0.8rem;
+        font-weight: 200;
+        /*&:before, &:after{
+            content: " ";
+
+        }*/
+    }
+
+    .info_container{
+        width: 50%;
+        margin: 30px auto;
+        h2 {
+            @include title();
+            font-size: 2rem;
+        }
+        p{
+            line-height: 30px;
+            font-style: italic;
+            font-size: 0.8rem;
+            margin: 20px;
+        }
+       
+    }
+
+
+
 }

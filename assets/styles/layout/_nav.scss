@@ -10,7 +10,6 @@ nav{
         justify-content: space-between;
         height: 65px;
         @include title;
-        letter-spacing: 2px;
         li{
             display: flex;
             align-items: center;

@@ -19,13 +19,13 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  width: 80%;
   margin: 0 auto;
 }
 header h1 {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 5rem;
 }
 header p {
@@ -45,7 +45,7 @@ header .circle_btn {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  width: 80%;
 }
 header .circle_btn a {
   border: 1px solid rgb(18, 18, 18);
@@ -88,7 +88,7 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -108,7 +108,6 @@ nav ul {
   height: 65px;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 3px;
   letter-spacing: 2px;
 }
 nav ul li {
@@ -164,7 +163,59 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  width: 80%;
+}
+section .container {
+  margin: 40px auto;
+}
+section .container h6 {
+  font-family: "Merriweather", Arial, Helvetica, sans-serif;
+}
+section .square_btn {
+  margin: 35px;
+}
+section .square_btn button {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: none;
+  outline: none;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+section .square_btn button:hover {
+  background: rgb(18, 18, 18);
+  color: rgb(255, 254, 254);
+}
+
+.first_section h6 {
+  font-size: 0.8rem;
+  font-weight: 200;
+  /*&:before, &:after{
+      content: " ";
+
+  }*/
+}
+.first_section .info_container {
+  width: 50%;
+  margin: 30px auto;
+}
+.first_section .info_container h2 {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+.first_section .info_container p {
+  line-height: 30px;
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: 20px;
 }
 
 footer {
@@ -179,7 +230,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  max-width: 900px;
+  width: 80%;
 }
 
 * {
@@ -198,4 +249,8 @@ body {
 
 a:visited {
   text-decoration: none;
+}
+
+img {
+  width: 80%;
 }/*# sourceMappingURL=index.css.map */
