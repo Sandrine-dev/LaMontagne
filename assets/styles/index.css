@@ -460,6 +460,7 @@ footer .contact div {
 footer .contact p {
   font-size: 0.8rem;
   color: rgb(91, 91, 91);
+  text-align: left;
 }
 footer .contact ul {
   display: -webkit-box;
