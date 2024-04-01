@@ -148,13 +148,15 @@ button:hover {
   width: 30px;
   height: 30px;
   color: rgb(18, 18, 18);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.box_contact a:hover {
+  color: rgb(255, 254, 254);
+  background: rgb(18, 18, 18);
 }
 .box_contact a i {
   font-size: 0.8rem;
-}
-.box_contact a:hover {
-  color: rgb(18, 18, 18);
-  background: rgb(255, 254, 254);
 }
 
 header {
@@ -384,34 +386,20 @@ header nav .nav_right a:hover {
 
 footer {
   background: rgb(255, 254, 254);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  width: 80%;
-  margin: 35px auto;
-  width: 85%;
-}
-footer .footer {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 35px 25px;
+  margin: 0 auto 70px;
+  width: 85%;
 }
-footer .footer label,
-footer .footer h5 {
+footer label,
+footer h5 {
   text-transform: uppercase;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 0.6rem;
   letter-spacing: 2px;
   color: rgb(91, 91, 91);
 }
-footer .footer .form {
+footer .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,11 +410,13 @@ footer .footer .form {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 35px 25px;
+  border-right: 1px solid rgb(232, 232, 232);
 }
-footer .footer .form form {
+footer .form form {
   width: 100%;
 }
-footer .footer .form .form-info {
+footer .form .form-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,8 +428,8 @@ footer .footer .form .form-info {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-footer .footer .form .form-info input,
-footer .footer .form .form-info textarea {
+footer .form .form-info input,
+footer .form .form-info textarea {
   border: 1px solid rgb(232, 232, 232);
   margin: 15px 0;
   width: 100%;
@@ -447,31 +437,34 @@ footer .footer .form .form-info textarea {
   padding: 7px;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
 }
-footer .footer .form .form-info textarea {
+footer .form .form-info textarea {
   resize: none;
 }
-footer .footer .form .form-info .square_btn {
+footer .form .form-info .square_btn {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-footer .footer .form .box_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+footer .contact {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
 }
-footer .footer .box_contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+footer .contact div {
+  border-bottom: 1px solid rgb(232, 232, 232);
+  display: grid;
+  grid-template-columns: 30% 70%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
-footer .footer .box_contact p {
+footer .contact p {
   font-size: 0.8rem;
   color: rgb(91, 91, 91);
-  margin-left: 25px;
+}
+footer .contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }/*# sourceMappingURL=index.css.map */
