@@ -1,0 +1,50 @@
+button{
+  background: none;
+  color: $black;
+  border: 2px solid $black;
+  height: 45px;
+  width: 170px;
+  cursor: pointer;
+  @include title;
+  transition: 0.4s ease;
+  &:hover{
+    background: $black;
+    color: $white;
+  }
+}
+
+
+.circle_btn{
+    @include flexCenter;
+     a{
+        @include circleBtn;
+        border-color: $white;
+        font-size: 1.3rem;
+        width: 55px;
+        height: 55px;
+        &:hover{
+            color: $black;
+            background: $white;
+        }
+    }
+}
+
+.box_contact{
+    @include flexCenter;
+     a{
+        @include circleBtn;
+        border-color: $gray;
+        font-size: 1.3rem;
+        width: 30px;
+        height: 30px;
+        color: $black;
+        i{
+            font-size: 0.8rem;
+        }
+
+        &:hover{
+            color: $black;
+            background: $white;
+        }
+    }
+}

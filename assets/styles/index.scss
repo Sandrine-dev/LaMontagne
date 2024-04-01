@@ -7,30 +7,6 @@
 
 // LAYOUT
 @import "./layout/header";
-@import "./layout/nav";
-@import "./layout/section";
+@import "./layout/main";
 @import "./layout/footer";
 
-//BODY
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-}
-
-body {
-  margin: 0 auto;
-  text-align: center;
-  background: url(../img/bg.jpg) center fixed;
-}
-
-a{
-  &:visited{
-    text-decoration: none;
-  }
-}
-
-img{
-  width: 80%;
-}

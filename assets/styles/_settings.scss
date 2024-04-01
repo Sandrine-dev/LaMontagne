@@ -12,18 +12,18 @@
 $white : rgb(255, 254, 254);
 $black: rgb(18, 18, 18);
 $gray: rgb(232, 232, 232);
+$gray2: rgb(91, 91, 91);
+$gray3: rgba(255, 255, 255, 0.27);
+$gray4: rgb(187, 187, 187);
+$font1: "Inter", Arial, Helvetica, sans-serif;
+$font2: "Merriweather", Arial, Helvetica, sans-serif;
 
 // MIXINS
 
 @mixin title{
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: $font1;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-@mixin text{
-  font-family: "Merriweather", Arial, Helvetica, sans-serif;
-  font-style: italic;
 }
 
 @mixin flexCenter{
@@ -37,8 +37,6 @@ $gray: rgb(232, 232, 232);
 @mixin circleBtn{
   border: 1px solid $black;
   border-radius: 50px;
-  width: 44px;
-  height: 44px;
   display: inline-block;
   display: flex;
   justify-content: center;
@@ -47,17 +45,50 @@ $gray: rgb(232, 232, 232);
   transition: 0.5s ease;
 }
 
-@mixin squareBtn{
-  font-weight: bold;
-  text-transform: uppercase;
-  background: none;
-  outline: none;
-  color: black;
-  border: 1px solid black;
-  cursor: pointer;
-  transition: 0.4s ease;
-  padding: 10px 20px;
-  font-size: 0.7rem;
-  letter-spacing: 1px;
+
+
+//BODY
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+li{
+  list-style: none;
+}
+
+a, a:visited{
+  color: $white;
+  text-decoration: none;
+}
+
+body {
+  background: url(../img/bg.jpg)  fixed center/cover;
+  margin: 0 auto;
+  max-width: 1300px;
+  text-align: center;
+  font-family: $font2;
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    animation: animBefore 1.5s ease forwards;
+    animation-delay: 0.15s ;
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  } 
 }
 
