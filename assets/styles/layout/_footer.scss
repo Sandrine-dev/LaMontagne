@@ -60,6 +60,9 @@ footer {
                 grid-template-columns: 30% 70%;
                 align-items: center;
                 width: 100%;
+                @media screen and (max-width: 700px) {
+                    padding: 25px;
+                }
             }
             p{
                 font-size: 0.8rem;
@@ -70,8 +73,15 @@ footer {
                 display: flex;
                 justify-content: space-around;
             }
+            div:nth-child(1){
+                @media screen and (max-width: 700px) {
+                    border-top: 1px solid $gray;
+                }
+            }
         }
     
-
+        @media screen and (max-width: 700px) {
+            grid-template-columns: 1fr;
+        }
     
 }

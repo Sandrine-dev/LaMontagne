@@ -41,7 +41,10 @@
             margin: 30px auto;
             h2 {
                 @include title();
-                font-size: 3rem;
+                font-size: 3rem; 
+                @media screen and (max-width: 700px) {
+                    font-size: 2rem;
+                }
             }
             p{
                 width: 60%;
@@ -86,6 +89,9 @@
             &:first-child {
                 border-right: 1px solid $gray;
             }
+        }
+        @media screen and (max-width: 700px) {
+            display: inherit;
         }
     }
 }
